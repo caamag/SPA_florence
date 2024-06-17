@@ -8,8 +8,31 @@ html{
   scroll-behavior: smooth;
 }
 
+h1{
+  font-size: 5rem;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h3{
+  font-size: 2.2rem;
+}
+
+p{
+  font-size: 1.4;
+}
+
+a{
+  text-decoration: none;
+}
+
 .container{
   width: 100%;
-  max-width: 1450px;
-  margin: 0 auto;
 }
+
+.section{
+  width: 100%;
+}
+

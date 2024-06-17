@@ -1,0 +1,35 @@
+
+.initial-section{
+    background-image: url(./assets/banner.jpg);
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.initial-section h1{
+    margin-left: 100px;
+    line-height: 40px;
+    color: white;
+}
+
+.initial-section a{
+    margin: 20px 0px 0px 100px;
+    font-size: 1.6rem;
+    color: white;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border: solid 1px white;
+    border-radius: 30px;
+    transition: 150ms;
+}
+
+.initial-section a:hover{
+    background-color: white;
+    color: rgb(40,40,40);
+}
