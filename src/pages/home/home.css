@@ -23,16 +23,30 @@
     color: white;
 }
 
+.initial-content div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+}
+
 .initial-content a {
     margin-top: 30px;
     font-size: 1.6rem;
     color: white;
     width: 150px;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     border: solid 1px white;
     border-radius: 30px;
+    font-weight: 600;
     transition: 150ms;
+}
+
+.yellow-link {
+    background-color: rgb(238, 193, 64);
+    color: rgb(40, 40, 40) !important;
+    border: none !important;
 }
 
 .initial-content a:hover {
@@ -40,12 +54,36 @@
     color: rgb(40, 40, 40);
 }
 
+/*styles container*/
+.styles-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.style-content {
+    width: 300px;
+    height: 350px;
+    padding: 15px;
+    margin: 100px 0px;
+    border: solid 1px black;
+}
+
+.style-content h2 {
+    line-height: 35px;
+}
+
+.style-content a {
+    color: white;
+    background-color: rgb(40, 40, 40);
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 1.4rem;
+}
+
 /*querys*/
 @media screen and (min-width: 1450px) {
-    .initial-content {
-        margin-left: 20%;
-    }
-
     .initial-content h1 {
         font-size: 7rem;
         line-height: 60px;
