@@ -18,6 +18,11 @@
     justify-content: center;
 }
 
+.initial-content span {
+    background-color: rgb(238, 193, 64, 0.8);
+    padding: 5px 25px;
+}
+
 .initial-content h1 {
     line-height: 40px;
     color: white;
@@ -67,19 +72,78 @@
     height: 350px;
     padding: 15px;
     margin: 100px 0px;
-    border: solid 1px black;
 }
 
 .style-content h2 {
     line-height: 35px;
+    transition: 500ms;
 }
 
 .style-content a {
     color: white;
-    background-color: rgb(40, 40, 40);
     padding: 15px 40px;
     border-radius: 30px;
+    background-color: rgb(40, 40, 40);
     font-size: 1.4rem;
+    font-weight: 600;
+    transition: 150ms;
+}
+
+.style-content a:hover {
+    padding: 15px 45px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(50%);
+    transition: 500ms;
+}
+
+.card h2 {
+    color: white;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    transition: 500ms;
+}
+
+.card:hover {
+    filter: contrast(100%);
+}
+
+.card:hover h2 {
+    margin-top: 90%;
+    background-color: rgb(40, 40, 40, 0.2);
+}
+
+.realism-card {
+    background-image: url(./assets/realismo-img.jpg);
+}
+
+.cover-card {
+    background-image: url(./assets/cobertura-img.jpg);
+}
+
+.piercing-card {
+    background-image: url(./assets/piercing-img.jpg);
+}
+
+/*space container*/
+.space-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.space-content div {
+    width: 50%;
 }
 
 /*querys*/
