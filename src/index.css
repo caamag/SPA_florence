@@ -1,38 +1,44 @@
-*{
+* {
   padding: 0px;
   margin: 0px;
 }
 
-html{
+html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
 }
 
-h1{
+h1 {
   font-size: 5rem;
 }
 
-h2{
+h2 {
   font-size: 3rem;
 }
 
-h3{
+h3 {
   font-size: 2.2rem;
 }
 
-p{
+p {
   font-size: 1.4;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.container{
+.container {
   width: 100%;
 }
 
-.section{
+.section {
   width: 100%;
 }
 
+.content {
+  width: 100%;
+  max-width: 1450px;
+}

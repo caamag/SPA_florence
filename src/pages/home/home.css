@@ -1,5 +1,4 @@
-
-.initial-section{
+.initial-section {
     background-image: url(./assets/banner.jpg);
     height: 80vh;
     background-position: center;
@@ -7,18 +6,25 @@
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    align-items: center;
 }
 
-.initial-section h1{
+.initial-content {
+    width: 50%;
+    height: 50%;
     margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.initial-content h1 {
     line-height: 40px;
     color: white;
 }
 
-.initial-section a{
-    margin: 20px 0px 0px 100px;
+.initial-content a {
+    margin-top: 30px;
     font-size: 1.6rem;
     color: white;
     width: 150px;
@@ -29,7 +35,19 @@
     transition: 150ms;
 }
 
-.initial-section a:hover{
+.initial-content a:hover {
     background-color: white;
-    color: rgb(40,40,40);
+    color: rgb(40, 40, 40);
+}
+
+/*querys*/
+@media screen and (min-width: 1450px) {
+    .initial-content {
+        margin-left: 20%;
+    }
+
+    .initial-content h1 {
+        font-size: 7rem;
+        line-height: 60px;
+    }
 }
