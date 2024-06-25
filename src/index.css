@@ -25,6 +25,10 @@ h3 {
   color: rgb(40, 40, 40);
 }
 
+h4 {
+  font-size: 1.8rem;
+}
+
 p {
   font-size: 15px;
   text-indent: 15px;

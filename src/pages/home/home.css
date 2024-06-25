@@ -104,6 +104,7 @@
     background-size: cover;
     filter: contrast(50%);
     transition: 500ms;
+    z-index: 0;
 }
 
 .card h2 {
@@ -139,12 +140,66 @@
 /*space container*/
 .space-content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.space-content div {
-    width: 50%;
+.location-cards {
+    width: 60%;
 }
+
+.location-cards p {
+    width: 70% !important;
+}
+
+.space-content p {
+    width: 80%;
+    text-align: justify;
+}
+
+.space-cards {
+    width: 90% !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.space-card {
+    width: 40% !important;
+    height: 200px;
+    margin-top: 50px;
+    padding: 20px;
+    transition: 150ms;
+    box-shadow: 1px 2px 10px rgb(198, 198, 198);
+}
+
+.space-card:hover {
+    box-shadow: 1px 2px 10px gray;
+}
+
+.space-card p {
+    width: 100% !important;
+}
+
+.card-icon {
+    height: 50px;
+    width: auto;
+}
+
+
+.space-banner {
+    width: 30%;
+    background-image: url(../../../public/space-image.jpeg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 2px 5px 30px gray;
+    transition: 250ms;
+}
+
+.space-banner:hover {
+    background-size: 110%;
+}
+
 
 /*querys*/
 @media screen and (min-width: 1450px) {
