@@ -2,9 +2,15 @@
 import './home.css'
 
 //images
-import locationImage from '../../../public/space-image.jpeg'
 import confortIcon from '../../../public/confort-icon.png'
 import toolIcon from '../../../public/tool.png'
+
+//projects images
+import project1 from './assets/project1.jpg'
+import project2 from './assets/project2.jpg'
+import project3 from './assets/project3.jpg'
+import project4 from './assets/project4.jpg'
+
 
 const Home = () => {
 
@@ -31,6 +37,24 @@ const Home = () => {
                 <a href=""><div className="style-content card realism-card"><h2>REALISMO</h2></div></a>
                 <a href=""><div className="style-content card cover-card"><h2>COBERTURA</h2></div></a>
                 <a href=""><div className="style-content card piercing-card"><h2>PIERCING</h2></div></a>
+            </div>
+        </section>
+
+        <section className='section products-section'>
+            <div className='content products-container'>
+                <div className='product-card-container'>
+                    <div className="product-card"></div>
+                    <div className="product-card"></div>
+                    <div className="product-card"></div>
+                    <div className="product-card"></div>
+                </div>
+
+                <div className='product-card-container'>
+                    <div className="product-card"></div>
+                    <div className="product-card"></div>
+                    <div className="product-card"></div>
+                    <div className="product-card"></div>
+                </div>
             </div>
         </section>
 
