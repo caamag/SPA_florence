@@ -29,15 +29,18 @@ const Home = () => {
         'https://www.instagram.com/p/C0nGDbspAnG/'
     ]
 
+    const windowWidth = window.innerWidth
+    const scrollLength = windowWidth > 1200 ? 1000 : 500
+
     const scrollLeft = () => {
         if (slideRef.current) {
-            slideRef.current.scrollBy({ left: -1000, behavior: 'smooth' })
+            slideRef.current.scrollBy({ left: -(scrollLength), behavior: 'smooth' })
         }
     }
 
     const scrollRight = () => {
         if (slideRef.current) {
-            slideRef.current.scrollBy({ left: 1000, behavior: 'smooth' })
+            slideRef.current.scrollBy({ left: scrollLength, behavior: 'smooth' })
         }
     }
 
@@ -128,8 +131,7 @@ const Home = () => {
 
                 <div className='space-banner'></div>
             </div>
-        </section><br /><br /><br /><br /><br /><br /><br /><br />
-
+        </section>
     </div>
 }
 

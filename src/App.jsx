@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 //components
 import Nav from './components/nav/nav'
+import Footer from './components/footer/footer'
 
 //pages
 import Home from './pages/home/home'
@@ -19,6 +20,7 @@ function App() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/admin' element={<Admin />}></Route>
       </Routes>
+      <Footer />
     </BrowserRouter>
 
   </div>
