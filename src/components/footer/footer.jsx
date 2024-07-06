@@ -22,7 +22,7 @@ const Footer = () => {
 
             // Verificar se está entre 10:00 e 18:00
             const isOpenHour = (currentHour > 10 || (currentHour === 10 && currentMinutes >= 0)) &&
-                (currentHour < 18 || (currentHour === 18 && currentMinutes === 0));
+                (currentHour < 20 || (currentHour === 20 && currentMinutes === 0));
 
             setIsOpen(isWeekday && isOpenHour);
         };
