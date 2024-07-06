@@ -1,18 +1,45 @@
 
 import './home.css'
+import { useRef } from 'react'
 
 //images
 import confortIcon from '../../../public/confort-icon.png'
 import toolIcon from '../../../public/tool.png'
 
-//projects images
-import project1 from './assets/project1.jpg'
-import project2 from './assets/project2.jpg'
-import project3 from './assets/project3.jpg'
-import project4 from './assets/project4.jpg'
+//slides
+import slide1 from './assets/slide1.png'
+import slide2 from './assets/slide2.png'
+import slide3 from './assets/slide3.png'
+import slide4 from './assets/slide4.png'
+import slide5 from './assets/slide5.png'
+import slide6 from './assets/slide6.png'
 
 
 const Home = () => {
+
+    //carrossel
+    const slideRef = useRef(null);
+    const slides = [slide1, slide2, slide3, slide4, slide5, slide6];
+    const slidesUrl = [
+        'https://www.instagram.com/p/C9BCoPUy05U/?img_index=1',
+        'https://www.instagram.com/p/C6bc_WaOq8u/',
+        'https://www.instagram.com/p/C3QQeUCO8DW/',
+        'https://www.instagram.com/p/C1xngqmJ_R-/',
+        'https://www.instagram.com/p/C1b6XudOYPF/',
+        'https://www.instagram.com/p/C0nGDbspAnG/'
+    ]
+
+    const scrollLeft = () => {
+        if (slideRef.current) {
+            slideRef.current.scrollBy({ left: -1000, behavior: 'smooth' })
+        }
+    }
+
+    const scrollRight = () => {
+        if (slideRef.current) {
+            slideRef.current.scrollBy({ left: 1000, behavior: 'smooth' })
+        }
+    }
 
     return <div className='container'>
 
@@ -34,26 +61,41 @@ const Home = () => {
                         Independentemente do design, estamos prontos para transformar suas ideias em arte.</p><br /><br /><br />
                     <a href="https://www.instagram.com/florence_tattoostudio/" target='blank'>Explorar</a>
                 </div>
-                <a href=""><div className="style-content card realism-card"><h2>REALISMO</h2></div></a>
-                <a href=""><div className="style-content card cover-card"><h2>COBERTURA</h2></div></a>
-                <a href=""><div className="style-content card piercing-card"><h2>PIERCING</h2></div></a>
+                <a href="">
+                    <div className="style-content card cover-card">
+                        <h2>COBERTURA</h2>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/p/C3v9zQHJ6Nr/?img_index=1">
+                    <div className="style-content card realism-card">
+                        <h2>REALISMO</h2>
+                    </div>
+                </a>
+                <a href="">
+                    <div className="style-content card piercing-card">
+                        <h2>PIERCING</h2>
+                    </div>
+                </a>
             </div>
         </section>
 
         <section className='section products-section'>
-            <div className='content products-container'>
-                <div className='product-card-container'>
-                    <div className="product-card"></div>
-                    <div className="product-card"></div>
-                    <div className="product-card"></div>
-                    <div className="product-card"></div>
+            <div className='products-container'>
+                <div className='product-text'>
+                    <h1>Um pouco<br /> do nosso  trabalho</h1>
+                    <a href="https://www.instagram.com/florence_tattoostudio/">Saiba mais</a>
                 </div>
 
-                <div className='product-card-container'>
-                    <div className="product-card"></div>
-                    <div className="product-card"></div>
-                    <div className="product-card"></div>
-                    <div className="product-card"></div>
+                <div className='product-content'>
+                    <div className="slider" ref={slideRef}>
+                        {slides.map((slide, index) => (
+                            <a href={slidesUrl[index]} target='_blank'><img src={slide} alt={'slide' + index} key={index} /></a>
+                        ))}
+                    </div>
+                    <div className="slider-control">
+                        <button onClick={scrollLeft}>{'<'}</button>
+                        <button onClick={scrollRight}>{'>'}</button>
+                    </div>
                 </div>
             </div>
         </section>
